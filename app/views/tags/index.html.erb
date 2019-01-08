@@ -1,0 +1,6 @@
+<h1>All the tags</h1>
+<ul id="tag">
+<% @tag.articles.each do |article|%>
+        <li><%= link_to article.title, article_path(article) %></li>
+    <% end %>
+</ul>
